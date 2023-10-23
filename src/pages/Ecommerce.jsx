@@ -1,6 +1,6 @@
 import React from "react";
 import { BsCurrencyDollar } from "react-icons/bs";
-import { GoPrimitiveDot } from "react-icons/go";
+import { GoDotFill } from "react-icons/go";
 import { IoIosMore } from "react-icons/io";
 import { DropDownListComponent } from "@syncfusion/ej2-react-dropdowns";
 
@@ -16,6 +16,7 @@ import {
 } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
 import product9 from "../data/product9.jpg";
+import welcomeImage from "../data/welcome-bg.svg";
 
 const DropDown = ({ currentMode }) => (
   <div className="w-28 border-1 border-color px-2 py-1 rounded-md">
@@ -37,7 +38,12 @@ const Ecommerce = () => {
   return (
     <div className="mt-24">
       <div className="flex flex-wrap lg:flex-nowrap justify-center ">
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
+        <div
+          className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg 
+        h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat 
+        bg-cover bg-center"
+          style={{ backgroundImage: `url(${welcomeImage})` }}
+        >
           <div className="flex justify-between items-center">
             <div>
               <p className="font-bold text-gray-400">Earnings</p>
@@ -61,7 +67,7 @@ const Ecommerce = () => {
           </div>
         </div>
 
-        {/*<div className="flex m-3 flex-wrap justify-center gap-1 items-center">
+        <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
           {earningData.map((item) => (
             <div
               key={item.title}
@@ -83,20 +89,24 @@ const Ecommerce = () => {
               <p className="text-sm text-gray-400  mt-1">{item.title}</p>
             </div>
           ))}
-        </div>*/}
+        </div>
       </div>
 
-      {/* <div className="flex gap-10 flex-wrap justify-center">
+      <div className="flex gap-10 flex-wrap justify-center">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780  ">
           <div className="flex justify-between">
             <p className="font-semibold text-xl">Revenue Updates</p>
             <div className="flex items-center gap-4">
               <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
-                <span><GoPrimitiveDot /></span>
+                <span>
+                  <GoDotFill />
+                </span>
                 <span>Expense</span>
               </p>
               <p className="flex items-center gap-2 text-green-400 hover:drop-shadow-xl">
-                <span><GoPrimitiveDot /></span>
+                <span>
+                  <GoDotFill />
+                </span>
                 <span>Budget</span>
               </p>
             </div>
@@ -188,9 +198,9 @@ const Ecommerce = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="flex gap-10 m-4 flex-wrap justify-center">
+      <div className="flex gap-10 m-4 flex-wrap justify-center">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg p-6 rounded-2xl">
           <div className="flex justify-between items-center gap-2">
             <p className="text-xl font-semibold">Recent Transactions</p>
@@ -241,9 +251,9 @@ const Ecommerce = () => {
             <LineChart />
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center">
         <div className="md:w-400 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl p-6 m-3">
           <div className="flex justify-between">
             <p className="text-xl font-semibold">Weekly Stats</p>
@@ -387,7 +397,7 @@ const Ecommerce = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
