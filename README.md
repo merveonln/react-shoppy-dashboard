@@ -1,6 +1,18 @@
-# Getting Started with Create React Appasdad
+# Shoppy
 
-<video src="./public/assets/shoppy-react.mp4"></video>
+## Dashboard Page
+
+<img src="public/assets/Ecommerce.png">
+
+## Dashboard Dark Page
+
+<img src="public/assets/Ecommerce-dark.png">
+
+## Employeess Page
+
+<img src="public/assets/employeess-page.png">
+
+# Getting Started with Create React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
