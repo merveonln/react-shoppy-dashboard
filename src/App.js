@@ -21,6 +21,10 @@ import {
   ColorPicker,
   ColorMapping,
   Editor,
+  Login,
+  Register,
+  LoginPage,
+  RegisterPage,
 } from "./pages";
 import "./App.css";
 
@@ -86,8 +90,11 @@ const App = () => {
 
               <Routes>
                 {/* dashboard  */}
+                {/* <Route path="/" element={<LoginPage />} /> */}
                 <Route path="/" element={<Ecommerce />} />
                 <Route path="/ecommerce" element={<Ecommerce />} />
+
+                {/* <Route path="/register" element={<RegisterPage />} /> */}
 
                 {/* pages  */}
                 <Route path="/orders" element={<Orders />} />

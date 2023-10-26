@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const RegisterPage = () => {
+const Register = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="bg-white p-8 rounded shadow-lg w-80">
@@ -32,4 +32,4 @@ const RegisterPage = () => {
   );
 };
 
-export default RegisterPage;
+export default Register;

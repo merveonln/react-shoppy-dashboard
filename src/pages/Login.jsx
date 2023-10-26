@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const LoginPage = () => {
+const Login = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="bg-white p-8 rounded shadow-lg w-80">
@@ -20,9 +21,15 @@ const LoginPage = () => {
         <button className="bg-blue-500 text-white p-2 rounded w-full hover:bg-blue-600">
           Giriş Yap
         </button>
+        <p className="mt-4 text-center">
+          Hesabınız yok mu?{" "}
+          <Link to="/register" className="text-blue-500 hover:underline">
+            Kayıt Ol
+          </Link>
+        </p>
       </div>
     </div>
   );
 };
 
-export default LoginPage;
+export default Login;
