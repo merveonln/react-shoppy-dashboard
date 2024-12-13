@@ -20,11 +20,7 @@ import {
   Financial,
   ColorPicker,
   ColorMapping,
-  Editor,
-  Login,
-  Register,
-  LoginPage,
-  RegisterPage,
+  Editor
 } from "./pages";
 import "./App.css";
 
